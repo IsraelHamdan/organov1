@@ -1,4 +1,4 @@
-import '../Colaborador/index'
+import Colaboraror from '../Colaborador'
 import './Times.css'
 
 const Times = (props) => {
@@ -7,8 +7,10 @@ const Times = (props) => {
    return (
       <section className='time'style={css}>
          <h3 key={Times.borda} className='time__nome' style={borda}>{props.nome} </h3>
-         {props.colaboradores.map(Colaboraror => <Colaboraror/>)}
-         
+         <div className="colaboradores">
+         {props.colaboradores.map(colaborador => <Colaboraror key ={Times.card} nome={colaborador.nome} cargo= {colaborador.cargo} imagem={colaborador.imagem}/>)}
+            
+         </div>
       </section>
    )
 }
