@@ -5,7 +5,10 @@ const ListaSuspensa = (props) => {
    return (
       <div className='lista-suspensa'>
          <label className='lista-suspensa__label'>{props.label}</label>
-         <select onChange={evento => props.aoAlterado(evento.target.value)} className='lista-suspensa__select'>
+         <select onChange={evento => props.aoAlterado(evento.target.value)} required={props.required} value={props.valor} className='lista-suspensa__select'>
+            <option value= "">
+               Selecione o time
+            </option>
             {props.itens.map(item => 
                <option required = {props.obrigatorio} key={item} placeholder= {placeholderModificada} >{item}</option>
             )}
@@ -15,3 +18,4 @@ const ListaSuspensa = (props) => {
 }
 
 export default ListaSuspensa
+

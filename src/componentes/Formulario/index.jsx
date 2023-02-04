@@ -20,6 +20,11 @@ const Formulario = (props) => {
             imagem, 
             time
         })
+        //limpando o formulario depois de ter feito o cadastro
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
     }
     return (
         <section className="formulario">

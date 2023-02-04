@@ -18,3 +18,16 @@
    margin-top: 32px;
    flex-wrap: wrap;
 }
+
+.desconhecido {
+   margin-top: 20px;
+   height: 90px;
+   width: 90px;
+}
+.rodape {
+   color: #6278F7;
+   font-size: 18px;
+   line-height: 22px;
+   font-weight: bold;
+   margin-bottom: 8px;
+}
