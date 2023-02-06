@@ -3,7 +3,7 @@ import './Colaborador.css'
 const Colaboraror = (props) => {
     return (
      <section className='colaborador' >
-         <div className="cabecalho">
+         <div className="cabecalho" style={{ backgroundColor: props.corDeFundo }}> 
             <img src={props.imagem} alt =  {props.nome}/>
          </div>
          <div className="rodape">
